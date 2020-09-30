@@ -12,7 +12,7 @@ Welcome to 30 Days of Code!
 
 ## 3. solution
 ```
-- input_string = "Welcome to 30 Days of Code!"
-- print('Hello, World.')
-- print(input_string)
+input_string = "Welcome to 30 Days of Code!"
+print('Hello, World.')
+print(input_string)
 ```
