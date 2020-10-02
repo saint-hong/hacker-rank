@@ -50,3 +50,51 @@ for 문에 fizzbuzz 함수를 넣어서, 원하는 범위의 연속된 숫자들
   3의 배수
   5의 배수
   ```
+## 2. avg 구하기
+입력 되는 숫자들의 합을 구하고 평균값을 출력한다. 예를들면 10, 2, 6, 30 을 입력받으면,
+네 가지 숫자를 더한 후 평균값을 출력한다. 
+
+```
+10 + 2 + 6 + 30 / 4
+
+12.0
+```
+문제의 어려운 점은 평균값을 구하기 위해서 몇 개의 숫자가 입력되었느지 갯수를 세야하는 과정이
+포함하는 것이다.
+
+### solution
+- 함수를 만들고,
+- 파라미터 값을 받는 datas 변수를 선언한다.
+- datas의 값들을 차례대로 더해주기 위해서 reduce와 lambda 를 사용하고 datas_sum 변수에 담는다.
+- datas의 갯수를 세는 코드를 len()을 사용하고 datas_length 변수에 담는다. 
+- result 에서 datas_sum과 datas_length 를 나누어 평균값을 구한다.
+- return 으로 result 값이 출력되도록 한다. 
+
+   ```
+   def avg(*args) :
+      from functools import reduce
+
+      datas = [*args]
+      datas_sum = reduce(lambda x, y : x + y, datas)
+      datas_length = len(datas)
+      result = datas_sum / datas_length
+
+      return result
+   ```
+   ```
+   avg(10, 2, 6, 30)
+   
+   12.0
+   ```
+
+- "reduce" 와 lambda 를 함께 사용하면 주어진 값을 차례대로 더하는 과정을 간편하게 처리할 수 있다. 
+   ```
+   from functools imprt reduce
+
+   reduce(lambda x, y : x + y, test)
+   ```
+   ```
+   test = [10, 12, 20]
+
+   42
+   ```
