@@ -27,7 +27,6 @@ for i in range(0, t) :
 ```
 
 - input format 코드 분석
-- 1)
 ```
 t = int(input())
 for i in range(0, t) :
@@ -36,14 +35,12 @@ for i in range(0, t) :
    - 어떤 숫자를 input 받는 변수 t
    - 첫번째 for 문에서 변수 i 는 rnage(0, t) 범위의 수를 차례로 받는다. 이 for 문에서 i 가 차례로 숫자를 받을 때마다 하위의 코드가 반복 실행된다. t 가 4 이면 0, 1, 2, 3 총 4번 실행 된다.
    - age 변수도 int 를 input 받으며, 첫번째 for문이 반복될때마다 age도 갱신된다.
-- 2)
 ```
 p = Person(age)
 p.amIOld()
 ```
    - 객체 p 는 class Person 을 선언한다. 아규먼트로 위에서 정의 된 age 를 사용한다.
    - class Person 의 함수 amIOld() 를 실행하면 age 에 해당하는 메시지가 출력된다.
--3)
 ```
 for j in range(0, 3) :
    p.yearPasses()
