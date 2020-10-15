@@ -32,7 +32,7 @@ Rank
 Hce akr
 Rn ak
 ```
-```
+
 ## Solution !!
 - 첫번째 코드
    - 입력된 str S 데이터의 길이를 확인하고
