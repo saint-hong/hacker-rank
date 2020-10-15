@@ -102,4 +102,29 @@ class Person :
 ## Difficult Point
 - input format code 를 분석하는 데 어려웠다.
 - 함수의 파라미터를 어떤것으로 정해야하는지 어려웠다.
-- input format code 의 for 문 반복 실행 원리를 이해하고, 하위 코드가 실행되는 것을 파악하기 어려웠다.
+- input format code 의 for 문 반복 실행 원리를 이해하고, 하위 코드가 실행되는 것을 파악하기 어려웠다
+
+## Another Solution
+```
+class Person :
+	def __init__(self, initialAge) :
+	     self.age = 0
+	     if initialAge < 0 :
+	             print("Age is not valid, setting age to 0.")
+             else :
+	        self.age = initialAge
+
+	def amIOld(self) :
+	     if age < 13 : 
+	          print("You are young.")
+	     elif 13 <= age < 18 :
+	          print("You are a teenager.")
+	     elif age >= 18 :
+	          print("You are old.")
+	
+	def yearPasses(self) :
+	     global age
+	     age += 1
+```
+- yearPasses() 함수에서 global 함수를 사용한 점이 흥미롭다. 
+- global age 는 class 외부에서 정의 된 age 의 데이터를 가져오게 된다.
