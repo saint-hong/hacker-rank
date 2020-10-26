@@ -126,12 +126,14 @@
 
 
 ## Useful code !! 
-    - dict 만드는 유용한 코드
+- dict 만드는 유용한 코드
+
     ```
     ### 1)
     t = int(input())
     d = dict((k,v) for k,v in [input().split() for i in range(t)])
     ```
+    
     ```
     ### 2)
     t = int(input())
@@ -142,6 +144,7 @@
        d[x[0]] = x[1]
 
     ```
+    
     ```
     ### 3)
     data = [("apple", 150),("banana", 200),("peach", 500)]
@@ -153,7 +156,8 @@
     d = {k:v for k,v in data}
     ```
 
-    - print 함수를 사용하여 원하는 출력결과를 얻는 방법
+- print 함수를 사용하여 원하는 출력결과를 얻는 방법
+   
     ```
     print(name, "=", pbook[name], sep="")
     print("%s=%s" %(name, pbook[name))]
