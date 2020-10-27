@@ -123,7 +123,7 @@ from functools import reduce
 
 fibo5 = lambda n : reduce(lambda x, n : [x[1], x[0] + x[1]], range(n), [0, 1])[0]
 for i in range(1, 10) :
-   print(fibo(i))
+   print(fibo5(i))
 ```
 
 ## 참고한 사이트
@@ -135,15 +135,3 @@ https://holicmath.tistory.com/45
 ```
 https://www.crocus.co.kr/1643
 ```
-
-
-
-
-
-
-
-
-
-
-
-
