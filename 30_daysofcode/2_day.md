@@ -16,7 +16,7 @@
 ## Output
 - total_cost : 15
 
-## Solution
+## Solution !!
 함수를 만들고 각각의 task 를 수행하는 코드를 순차적으로 입력.
 
 ```

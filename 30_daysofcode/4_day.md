@@ -99,7 +99,7 @@ class Person :
 	def yearPasses(self) :
 	     self.initialAge = self.initialAge + 1
 ```
-## Difficult Point
+## Difficult Point @.@
 - input format code 를 분석하는 데 어려웠다.
 - 함수의 파라미터를 어떤것으로 정해야하는지 어려웠다.
 - input format code 의 for 문 반복 실행 원리를 이해하고, 하위 코드가 실행되는 것을 파악하기 어려웠다

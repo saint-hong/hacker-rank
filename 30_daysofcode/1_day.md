@@ -3,11 +3,11 @@
 ## Data Types
   - 3개의 데이터 타입을 입력받아서 다음과 같이 출력하시오.
 
-## input
+## Input
   - i = 4
   - d = 4.0
   - s = "HackerRank"
-## output
+## Output
   - 16 : i 와 다른 변수의 합
   - 8.0 : d 와 다른 변수의 합
   - HackerRank is the best place to learn and practice coding! : s 와 다른 변수의 합

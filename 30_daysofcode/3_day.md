@@ -37,7 +37,7 @@ elif N % 2 == 0 :
    elif N > 20 :
       print("Not Weird")
 ```
-## Difficult Point
+## Difficult Point @.@
 - odd / even 을 구분하는 조건문을 명확하게 작성하는데 시간이 오래 걸림.
 - 상위 조건 하위 조건을 구분하기 위해if / elif 의 순서를 정하는데 어려웠다.
 
