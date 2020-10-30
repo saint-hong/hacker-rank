@@ -65,3 +65,45 @@ def long_repeats(self)
 
    return max([len(list(count)) for char, count in groupby(self) if char == "1"], default=0)
 ```
+## Anotehr code !!
+- for 문을 사용하여 문자열에서 각각 문자를 순서대로 추출하고, 등장하는 문자와 앞,뒤 문자의 조건에 따라서 count 를 하는 코드
+- 문자의 count 와 최대반복 maxcount 를 구분한 뒤 1 이 반복되면 count 에 1일 더해지고, maxcount 보다 count 가 큰 경우 maxcount와 count를 같게 설정하였다. 0 이 나오면 count 를 0으로 만들어 준다.
+
+```
+n = int(input())
+b_num = bin(n).replace("0b", "")
+
+count = 0
+maxcount = 0
+
+for i in b_num :
+    if i == "1" :
+        count += 1
+    elif count > maxcount :
+        maxcount = count
+        count = 0
+    else :
+        count = 0
+        
+if count > maxcount :
+    maxcount = count
+```
+- 그 외로, collections 패키지의 Counter 함수를 사용하면, 문자열의 모든 문자의 빈도수를 세어준다.
+```
+from collection import Counter
+
+word = "11000111"
+result = Counter(word)
+```
+```
+출력
+Counter({'1':5, '0':3})
+```
+
+## Expansion
+- 파이썬의 itertools 모듈은 효율적인 반복함수를 만드는 함수를 제공해준다. 데이터의 반복적인 형태를 분석하거나, 만들어야할 때 유용하게 사용할 수 있다.
+- 특히 데이터 분석에서 반복적인 작업을 많이 해야할 때에, 메모리 사용을 줄이고, 코드를 더 간결하게 만드는데 도움을 준다.
+- python docs 에 소개 된 iterater 함수들을 공부해 보는 것이 좋을 것 같다. 
+```
+https://docs.python.org/ko/3.8/library/itertools.html
+```
