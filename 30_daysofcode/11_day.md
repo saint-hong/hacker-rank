@@ -48,8 +48,14 @@ e f g
 - array 의 행, 렬에 해당하는 숫자를 선택한다.
 - hourglass 의 패턴에 맞는 행, 렬 선택 방법을 찾는다. hourglass 의 top, middle, bottom 으로 구분 
    - top : arr[0][0], arr[0][1], arr[0][2]
-   - middle : arr[0][0], arr[0][1], arr[0][2]
-   - bottom : arr[0][0], arr[0][1], arr[0][2]
+   - middle : arr[1][1]
+   - bottom : arr[2][0], arr[2][1], arr[2][2]
+- hg 패턴을 확인한다. hg 의 높이가 3 이므로 총 4개의 행마다 4개의 가로열을 선택할 수 있다.
+```
+i,t / i,t+1 / i,t+2
+i+1,t+1
+i+2,t / i+2,t+1 / i+2,t+2
+```
 - 각 부분의 선택된 숫자를 합한다.
 - 최대값을 출력한다.
 
@@ -67,8 +73,7 @@ for i in range(4) :
         
 print(max(hourglasses))
 ```
-- hourglass 의 데이터를 확인
+- hourglass 의 데이터를 확인, 최대값 19
 ```
 [7, 4, 2, 0, 4, 8, 10, 8, 3, 6, 7, 6, 3, 9, 19, 14]
 ```
-
